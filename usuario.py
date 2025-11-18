@@ -1,3 +1,5 @@
+from abc import ABC, abstractmethod
+
 class Usuario(ABC):
     def __init__(self, id: int, nome: str, email: str, senha: str):
         self._id = id

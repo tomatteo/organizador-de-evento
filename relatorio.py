@@ -1,3 +1,5 @@
+from datetime import datetime
+
 class Relatorio:
     def __init__(self, id: int, conteudo: str):
         self._id = id

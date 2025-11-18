@@ -1,3 +1,6 @@
+from participante import Participante
+#from evento import Evento
+
 class Ingresso:
     def __init__(self, id: int, tipo: str, preco: float, participante: 'Participante', evento: 'Evento'):
         self._id = id

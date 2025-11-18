@@ -1,3 +1,8 @@
+from usuario import Usuario
+# from ingresso import Ingresso
+from typing import Union
+#from evento import Evento
+
 class Participante(Usuario):
     def __init__(self, id: int, nome: str, email: str, senha: str, cpf: str):
         super().__init__(id, nome, email, senha)

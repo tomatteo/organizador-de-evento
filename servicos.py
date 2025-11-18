@@ -1,5 +1,12 @@
 # servicos.py
 from datetime import datetime
+from usuario import Usuario
+from organizador import Organizador
+from participante import Participante
+from evento import Evento
+from relatorio import Relatorio
+from administrador import Administrador
+from ingresso import Ingresso
 
 GLOBAL_EVENTO_ID = 1
 GLOBAL_INGRESSO_ID = 100

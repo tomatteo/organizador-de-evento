@@ -1,3 +1,7 @@
+from local import Local
+from ingresso import Ingresso
+from datetime import datetime
+
 class Evento:
     def __init__(self, id: int, nome: str, descricao: str, dataInicio: datetime, dataFim: datetime, capacidade: int, local_info: dict):
         self._id = id

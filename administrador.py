@@ -1,3 +1,7 @@
+from usuario import Usuario
+from evento import Evento
+from relatorio import Relatorio
+
 class Administrador(Usuario):
     def __init__(self, id: int, nome: str, email: str, senha: str):
         super().__init__(id, nome, email, senha)

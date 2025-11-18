@@ -1,7 +1,7 @@
 # organizador.py
 from usuario import Usuario
 from evento import Evento
-from ingresso import Ingresso # Para acessar o método cancelar() do Ingresso
+#from ingresso import Ingresso // Para acessar o método cancelar() do Ingresso
 from typing import Union # Adicionado para corrigir o TypeError
 
 class Organizador(Usuario):
