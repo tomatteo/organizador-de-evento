@@ -29,7 +29,7 @@ Para testar o sistema e validar as regras de negócio, siga os passos:
 
 1.  Clone este repositório:
     ```bash
-    git clone https://github.com/tomatteo/organizador-de-eventos.git
+    git clone https://github.com/tomatteo/organizador-de-evento.git
     ```
 2.  Navegue até a pasta do projeto.
 3.  Execute o arquivo principal de testes (`main.py`):
