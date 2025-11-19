@@ -29,7 +29,7 @@ Para testar o sistema e validar as regras de negócio, siga os passos:
 
 1.  Clone este repositório:
     ```bash
-    git clone https://github.com/tomatteo/organizador-de-evento.git
+    git clone [https://github.com/tomatteo/organizador-de-evento.git](https://github.com/tomatteo/organizador-de-evento.git)
     ```
 2.  Navegue até a pasta do projeto.
 3.  Execute o arquivo principal de testes (`main.py`):
@@ -50,6 +50,20 @@ Este projeto foi estruturado de forma modular e aplica os seguintes conceitos de
 * **Polimorfismo:** O método `autenticar()` é sobrescrito em cada subclasse de `Usuario`.
 * **Relações:** O sistema implementa Composição (entre `Evento` e `Local`) e Agregação/Associação (entre `Evento`, `Ingresso` e `Participante`).
 
-* <img width="998" height="364" alt="image" src="https://github.com/user-attachments/assets/545a17dc-d682-487d-86a8-194301661519" />
+---
 
-<img width="484" height="744" alt="image" src="https://github.com/user-attachments/assets/f7010711-f6f4-4eec-90d8-703e6389970d" />
+## Diagramas do Sistema
+
+Abaixo estão os diagramas UML desenvolvidos na etapa de modelagem do projeto.
+
+### Diagrama de Casos de Uso 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/545a17dc-d682-487d-86a8-194301661519" width="800px" />
+</div>
+
+<br>
+
+### Diagrama de Classes
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f7010711-f6f4-4eec-90d8-703e6389970d" width="500px" />
+</div>
