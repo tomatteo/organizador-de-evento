@@ -48,4 +48,8 @@ Este projeto foi estruturado de forma modular e aplica os seguintes conceitos de
 * **Herança:** As classes `Administrador`, `Organizador` e `Participante` herdam de `Usuario`.
 * **Encapsulamento:** Todos os atributos são privados (`_`) e acessados via decoradores `@property` para controle e validação.
 * **Polimorfismo:** O método `autenticar()` é sobrescrito em cada subclasse de `Usuario`.
-* **Relações:** O sistema implementa Composição (entre `Evento` e `Local`) e Agregação/Associação (entre `Evento`, `Ingresso` e `Participante`).    
+* **Relações:** O sistema implementa Composição (entre `Evento` e `Local`) e Agregação/Associação (entre `Evento`, `Ingresso` e `Participante`).
+
+* <img width="998" height="364" alt="image" src="https://github.com/user-attachments/assets/545a17dc-d682-487d-86a8-194301661519" />
+
+<img width="484" height="744" alt="image" src="https://github.com/user-attachments/assets/f7010711-f6f4-4eec-90d8-703e6389970d" />
