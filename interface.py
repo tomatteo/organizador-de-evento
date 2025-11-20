@@ -77,6 +77,10 @@ class InterfaceGrafica(tk.Tk):
             btn.bind("<Enter>", lambda e, b=btn: b.config(bg="#b4befe"))
             btn.bind("<Leave>", lambda e, b=btn: b.config(bg="#89b4fa"))
 
+    # ---------------------------------------------------
+    #  DAQUI PRA BAIXO O CÓDIGO É O MESMO DO SEU (funções sem mudanças)
+    # ---------------------------------------------------
+
     def cadastrar_evento(self):
         janela = tk.Toplevel(self)
         janela.title("Cadastrar Evento")
