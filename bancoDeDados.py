@@ -54,6 +54,7 @@ class Database:
     def salvar_evento(self, evento):
         cursor = self.conn.cursor()
 
+       
         cursor.execute("""
             INSERT INTO eventos (
                 nome, descricao, data_inicio, data_fim, capacidade,
@@ -66,10 +67,10 @@ class Database:
             evento.data_inicio.strftime("%Y-%m-%d %H:%M"),
             evento.data_fim.strftime("%Y-%m-%d %H:%M"),
             evento.capacidade,
-            evento.local["id"],
-            evento.local["nome"],
-            evento.local["endereco"],
-            evento.local["capacidade"]
+            evento.local.id,          # Corrigido
+            evento.local.nome,        # Corrigido
+            evento.local.endereco,    # Corrigido
+            evento.local.capacidade   # Corrigido
         ))
 
         self.conn.commit()
@@ -91,16 +92,22 @@ class Database:
 
     def salvar_participante(self, participante):
         cursor = self.conn.cursor()
-        cursor.execute("""
-            INSERT INTO participantes (nome, email, senha, cpf)
-            VALUES (?, ?, ?, ?)
-        """, (
-            participante.nome,
-            participante.email,
-            participante.senha,
-            participante.cpf
-        ))
-        self.conn.commit()
+        # O try/except ajuda a evitar erro se o email já existir (caso adicione UNIQUE no banco depois)
+        try:
+            cursor.execute("""
+                INSERT INTO participantes (nome, email, senha, cpf)
+                VALUES (?, ?, ?, ?)
+            """, (
+                participante.nome,
+                participante.email,
+                participante.senha,
+                participante.cpf
+            ))
+            self.conn.commit()
+            return True
+        except sqlite3.Error as e:
+            print(f"Erro ao salvar participante: {e}")
+            return False
 
     def listar_participantes(self):
         cursor = self.conn.cursor()
